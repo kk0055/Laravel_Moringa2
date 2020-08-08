@@ -1,0 +1,388 @@
+
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: black;
+  z-index: 2;
+}
+.center {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/* -----------------------------
+	footer
+------------------------------*/
+
+#footer {
+  padding: 25px 0;
+  background-color: #f8f8f8;
+  }
+  
+  #footer .categoryLinkArea {
+  background: #6a73b8;
+  }
+  
+  #footer .categoryLink {
+  margin-bottom: 25px;
+  text-align: center;
+  }
+  
+  #footer .categoryLink li {
+  display: inline-block;
+  font-size: 13px;
+  }
+  
+  #footer .categoryLink li a {
+  display: inline-block;
+  padding: 14px 10px;
+  color: #ffffff;
+  }
+  
+  #footer .categoryLink li a:hover {
+  background-color: #8993e5;
+  text-decoration: none;
+  }
+  
+  #footer .snsList {
+  margin-bottom: 25px;
+  text-align: center;
+  }
+  
+  #footer .snsList li {
+  display: inline-block;
+  margin: 0 2px;
+  }
+  
+  #footer .snsList li a {
+  padding: 4px 8px;
+  border-radius: 3px;
+  line-height: 1;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
+  }
+  
+  #footer .snsList li.hatebu a {
+  background-color: #00a4de;
+  }
+  
+  #footer .snsList li.tw a {
+  background: #1b95e0;
+  }
+  
+  #footer .snsList li.fb a {
+  background: #4267b2;
+  }
+  
+  #footer .snsList li a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  }
+  
+  #footer .otherLink {
+  margin: 0 250px 30px;
+  padding: 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  background-color: #fff;
+  }
+  
+  #footer .otherLink h2 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  }
+  
+  #footer .otherLink ul {
+  text-align: center;
+  }
+  
+  #footer .otherLink ul li {
+  display: inline-block;
+  margin: 0 5px;
+  }
+  
+  #footer .otherLink ul li a {
+  font-size: 13px;
+  }
+  
+  #footer #copyright {
+  font-size: 14px;
+  text-align: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+  #footer {
+  padding: 15px 0;
+  }
+  
+  #footer .categoryLink li {
+  font-size: 12px;
+  }
+  
+  #footer .categoryLink li a {
+  padding: 10px 8px;
+  }
+  
+  #footer .otherLink {
+  margin: 0 10px 20px;
+  }
+  
+  #footer .otherLink h2 {
+  margin-bottom: 12px;
+  }
+  
+  #footer #copyright {
+  font-size: 13px;
+  }
+  }
+  
+  /* -----------------------------
+    aboutArea
+  ------------------------------*/
+  
+  #footer .aboutArea {
+  margin-bottom: 50px;
+  }
+  
+  #footer .aboutArea h2 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  }
+  
+  #footer .aboutArea p {
+  margin-bottom: 5px;
+  font-size: 13px;
+  }
+  
+  @media screen and (max-width: 640px) {
+  
+  }
+  
+  /* -----------------------------
+    topicPath
+  ------------------------------*/
+  
+  #content .topicPath {
+  margin-bottom: 15px;
+  }
+  
+  #content .topicPath li {
+  display: inline-block;
+  font-size: 13px;
+  }
+  
+  #content .topicPath li:after {
+  content: ">";
+  margin: 0 5px;
+  }
+  
+  #content .topicPath li:last-child:after {
+  content: none;
+  }
+  
+  /* -----------------------------
+    Table
+  ------------------------------*/
+  
+  /* -----------------------------
+    clearFix
+  ------------------------------*/
+  
+  @charset 'UTF-8';
+  
+  /* -----------------------------
+    section
+  ------------------------------*/
+  
+  #content section {
+  margin-bottom: 30px;
+  }
+  
+  #content section h2,
+  h1.row {
+  margin: 0 30px 10px;
+  font-size: 20px;
+  }
+  
+  @media screen and (max-width: 640px) {
+  #content section h2 {
+  margin: 0 10px 10px;
+  font-size: 18px;
+  }
+  }
+  
+  /* -----------------------------
+    section content
+  ------------------------------*/
+  
+  /* -----------------------------
+    designList
+  ------------------------------*/
+  
+  #content .designList {
+  margin: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  }
+  
+  #content .designList li {
+  margin-bottom: 2px;
+  width: 50%;
+  }
+  
+  #content .designList li a {
+  display: block;
+  }
+  
+  @media screen and (max-width: 640px) {
+  #content .designList {
+  margin: 0 10px;
+  display: block;
+  }
+  
+  #content .designList li {
+  width: auto;
+  }
+  
+  #content .designList li img {
+  width: 100%;
+  height: auto;
+  }
+  
+  }
+  
+  /* -----------------------------
+    imgArea
+  ------------------------------*/
+  
+  #content #imgArea {
+  padding: 0;
+  }
+  
+  #content #imgArea .img {
+  margin: 0 auto 20px;
+  width: 904px;
+  }
+  
+  #content #imgArea .txt {
+  margin-bottom: 100px;
+  font-size: 13px;
+  text-align: center;
+  }
+  
+  #content .linkList {
+  text-align: center;
+  }
+  
+  #content .linkList li {
+  display: inline-block;
+  margin: 0 10px;
+  }
+  
+  #content .linkList li a {
+  display: block;
+  padding: 15px 0;
+  position: relative;
+  border-radius: 5px;
+  background-color: rgb(79, 79, 79);
+  width: 159px;
+  color: #fff;
+  }
+  
+  #content .linkList li a:after {
+  content: "";
+  display: block;
+  margin-top: -2px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  border-style: solid;
+  border-width: 2.5px 0 2.5px 4px;
+  border-color: transparent transparent transparent #ffffff;
+  }
+  
+  #content .linkList li a:hover {
+  opacity: 0.7;
+  }
+  
+  #content .linkList li a:hover {
+  text-decoration: none;
+  }
+  
+  @media screen and (max-width: 640px) {
+  #content #imgArea .img {
+  margin: 0 0 20px;
+  width: auto;
+  }
+  
+  #content #imgArea .img img {
+  width: 100%;
+  height: auto;
+  }
+  
+  #content #imgArea .txt {
+  margin-bottom: 50px;
+  }
+  
+  #content .linkList li {
+  display: block;
+  margin: 0 10px 10px;
+  }
+  
+  #content .linkList li a {
+  width: auto;
+  }
+  }
+  
+  /* -----------------------------
+    ad01
+  ------------------------------*/
+  
+  .ad01 {
+  margin: 0 auto 30px;
+  width: 890px;
+  text-align: center;
+  }
+  
+  @media screen and (max-width: 640px) {
+  .ad01 {
+  overflow: hidden;
+  margin: 0 10px 15px;
+  width: auto;
+  height: auto;
+  }
+  }
+  
+  

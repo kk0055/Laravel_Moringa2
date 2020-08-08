@@ -1,0 +1,64 @@
+products.bladeのデザイン作れば注文画面できる。
+デザインが崩壊してる 2020/8/7
+
+
+商品を選択したらその商品のカート画面にいきたい
+特定のIDを表示する必要あり
+
+shop/{product} 
+cart/{id}で表示したい
+
+これで解決。foraeachは使わない
+    public function cart(int $id )
+
+    {
+
+      $product = Product::where('id',$id)->firstOrFail();
+      return view('cart')->with('product',$product);
+
+    }
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>VIew Transactions</title>
+</head>
+<body>
+  <div class="container mt-4">
+<div class="btn-group" role="group">
+<a href="customers.php" class="btn btn-secondary">Customers</a>
+<a href="transactions.php" class="btn btn-primary">Transactions</a>
+</div>
+<hr>
+ <h2>Transactions</h2>
+ <table class="table table-striped">
+ <thead>
+ <tr>
+ <th>商品名</th>
+ <th>値段</th>
+ <th>説明</th>
+ <th>Date</th>
+ </tr>
+ </thead>
+
+
+
+<tr>
+<td>{{$product->name}} </td>
+<td>{{$product->price}} 円</td>
+<td>{{$product->descrition}}</td>
+
+
+</tr>
+
+ </table>
+ <p><a href="index.php">Pay Page</a></p>
+  </div>
+</body>
+</html>
